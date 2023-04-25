@@ -14,7 +14,7 @@ for i in range(720):
         for x in data:
             byte1 += str(x//255)
         bits_string.append(int(byte1, 2) & 0xff)
-        if(i*720 + j*8 == file_cap-1):
+        if (i*720 + j*8 == file_cap-1):
             complete = 1
         if complete:
             break
